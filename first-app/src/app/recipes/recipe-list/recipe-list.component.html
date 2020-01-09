@@ -1,19 +1,15 @@
 <div class="row">
-    <div class="col-xs-12">
-        <button class="btn btn-success">New Recipe</button>
-    </div>
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
 </div>
 <hr>
-
-
-<div class="card" style="width: 25rem;">
-    <a href="#" class="list-group-item clear-fix" *ngFor="let recpie of recipes">
-    <span class="pull-right">
-        <img [src]="recpie.imagePath" alt="{{recpie.name}}" class="card-img-top" style="max-height: 50px;">
-    </span> 
-    <div class="card-body">
-      <h5 class="card-title">{{recpie.name}}</h5>
-      <p class="card-text">{{recpie.description}}</p>
-    </div>
-    </a>
+<div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item
+      *ngFor="let recipeEl of recipes"
+      [recipe]="recipeEl"
+      (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>
   </div>
+</div>
+
