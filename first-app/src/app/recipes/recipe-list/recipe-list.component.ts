@@ -10,10 +10,10 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [new Recipe('Mutton Kuzhambu',
-                      'Curry made with delicious goat meat marinated with spices and Indian Masala tossed in oil with onions, cashew and green chilly',
+                      'Curry made with delicious goat meat',
                        'https://yummyindiankitchen.com/wp-content/uploads/2019/09/mutton-kulambu-in-tamil-style-mutton-kuzhambu.jpg' ),
                        new Recipe('Mutton Kuzhambu',
-                      'Curry made with delicious goat meat marinated with spices and Indian Masala tossed in oil with onions, cashew and green chilly',
+                      'Curry made with delicious goat meat',
                        'https://yummyindiankitchen.com/wp-content/uploads/2019/09/mutton-kulambu-in-tamil-style-mutton-kuzhambu.jpg' )
                       ];
 
